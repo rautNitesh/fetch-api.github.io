@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nitesh Raut - a personal portfolio</title>
+  </head>
+  <link rel="stylesheet" href="index.css" />
+  <body>
+    <div id="loading">
+      <img
+        src="https://flevix.com/wp-content/uploads/2019/07/Curve-Loading.gif"
+      />
+    </div>
+    <div id="container" hidden>
+      <div id="profileSection">
+        <img id="profileSection__avatar" alt="profile picture" />
+        <div id="profileSection__info">
+          <h3 id="profileSection__info__name"></h3>
+          <p id="profileSection__info__bio"></p>
+          <h5 id="profileSection__info__followers"></h5>
+        </div>
+      </div>
+    </div>
+    <div id="githubRepo__pagination"></div>
+
+    <div id="newsFeed" hidden>
+      <div id="githubRepos">
+        <div id="githubRepo"></div>
+      </div>
+
+      <div id="twitterFeed">
+        <a
+          class="twitter-timeline"
+          href="https://twitter.com/TheRAuTeSH?ref_src=twsrc%5Etfw"
+          >Tweets by TheRAuTeSH</a
+        >
+      </div>
+    </div>
+    <script src="index.js"></script>
+    <script
+      async
+      src="https://platform.twitter.com/widgets.js"
+      charset="utf-8"
+    ></script>
+  </body>
+</html>

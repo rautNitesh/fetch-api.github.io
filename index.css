@@ -1,0 +1,138 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+}
+body {
+  box-sizing: border-box;
+  color: white;
+  background-color: rgb(203, 223, 248);
+  font-family: "Roboto", sans-serif;
+}
+#loading {
+  position: fixed;
+  text-align: center;
+  z-index: 10;
+  width: 100vw;
+  height: 100vh;
+  text-align: center;
+}
+#loading img {
+  width: 50%;
+  text-align: center;
+}
+#container {
+  width: 95%;
+  margin: 1em auto 0 auto;
+  background-color: white;
+  border-radius: 0.3em;
+  z-index: 0;
+}
+#profileSection {
+  color: black;
+  display: flex;
+  justify-content: space-between;
+  margin: 0.5em;
+}
+#profileSection__avatar {
+  width: 10em;
+  border-radius: 50%;
+  padding: 0.5em;
+  margin-left: 7em;
+}
+#profileSection__info {
+}
+#profileSection__info__name {
+  margin-top: 1em;
+  font-size: 2em;
+}
+#profileSection__info__bio {
+  font-weight: 300;
+  margin-top: 0.5em;
+}
+#profileSection__info__followers {
+  margin-top: 0.5em;
+}
+#newsFeed {
+  width: 95%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  z-index: 0;
+}
+#githubRepos {
+  background-color: white;
+  padding: 1em;
+  border-radius: 0.3em;
+  color: black;
+  width: 70%;
+}
+#twitteFeed {
+  width: auto;
+}
+#githubRepo__url {
+  margin-bottom: 2em;
+}
+#githubRepo__description {
+  background-color: lavenderblush;
+  padding: 0.5em;
+}
+#githubRepo__pagination {
+  width: 30%;
+  margin-left: 1.8em;
+  display: inline-block;
+}
+#githubRepo__pagination button {
+  padding: 0.5em;
+  background-color: rgb(203, 223, 248);
+  border: 2px rgba(4, 4, 184, 0.849) solid;
+  outline: none;
+  margin: 0.5em 0.5em;
+  transition: all 0.2s ease;
+  cursor: pointer;
+}
+#githubRepo__pagination button:hover {
+  background-color: rgba(4, 4, 184, 0.849);
+  color: white;
+}
+@media (max-width: 768px) {
+  #container {
+    width: 80%;
+  }
+  #githubRepo__pagination {
+    width: 100%;
+  }
+  #profileSection {
+    display: block;
+    text-align: center;
+  }
+  #profileSection__avatar {
+    width: 5em;
+    height: 5em;
+    border-radius: 50%;
+    padding: 0.5em;
+    margin: 0;
+  }
+  #profileSection__info__name {
+    font-size: 1.5em;
+    margin-top: 0;
+  }
+  #profileSection__info__bio {
+    font-weight: 300;
+    margin-top: 0.5em;
+    font-size: 0.5em;
+  }
+  #newsFeed {
+    display: block;
+  }
+  #githubRepos {
+    margin: auto;
+    width: 75%;
+  }
+  #twitterFeed {
+    margin: auto;
+    margin-top: 0.5em;
+    width: 85%;
+  }
+}
