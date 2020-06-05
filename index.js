@@ -11,7 +11,7 @@ function fetchAgain() {
   console.log(page_number);
 
   Promise.all([
-    fetch("https://api.github.com/users/rautNites"),
+    fetch("https://api.github.com/users/rautNitesh"),
     fetch(fetchRepoUrl),
   ])
     .then(async ([res, res2]) => {
