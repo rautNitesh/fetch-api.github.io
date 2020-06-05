@@ -28,6 +28,7 @@ body {
   background-color: white;
   border-radius: 0.3em;
   z-index: 0;
+  box-shadow: 1px 1px 1em #0000007c;
 }
 #profileSection {
   color: black;
@@ -38,11 +39,12 @@ body {
 #profileSection__avatar {
   width: 10em;
   border-radius: 50%;
-  padding: 0.5em;
+  padding: 1em;
   margin-left: 7em;
 }
 #profileSection__info {
   display: inline;
+  padding: 1em;
 }
 #profileSection__info__name {
   margin-top: 1em;
@@ -72,9 +74,11 @@ body {
   border-radius: 0.3em;
   color: black;
   width: 70%;
+  box-shadow: 1px 1px 1em #0000007c;
 }
 #twitteFeed {
   width: auto;
+  box-shadow: 1px 1px 1em #0000007c;
 }
 #githubRepo__url {
   margin-bottom: 2em;
