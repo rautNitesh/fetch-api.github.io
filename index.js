@@ -6,12 +6,12 @@ function pageUpdate(pageNo) {
 
 function fetchAgain() {
   fetchRepoUrl =
-    "https://api.github.com/users/bradTraversy/repos" +
-    `?page=${page_number}&per_page=30`;
+    "https://api.github.com/users/rautNitesh/repos" +
+    `?page=${page_number}&per_page=1`;
   console.log(page_number);
 
   Promise.all([
-    fetch("https://api.github.com/users/bradtraversy"),
+    fetch("https://api.github.com/users/rautNites"),
     fetch(fetchRepoUrl),
   ])
     .then(async ([res, res2]) => {
@@ -24,10 +24,10 @@ function fetchAgain() {
 
       data = data[0];
       total_repos = data["public_repos"];
-      if (total_repos % 30 == 0) {
-        no_of_pages = total_repos / 30;
+      if (total_repos % 1 == 0) {
+        no_of_pages = total_repos / 1;
       } else {
-        no_of_pages = total_repos / 30 + 1;
+        no_of_pages = total_repos / 1 + 1;
       }
       document.getElementById("profileSection__avatar").src =
         data["avatar_url"];
