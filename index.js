@@ -6,12 +6,12 @@ function pageUpdate(pageNo) {
 
 function fetchAgain() {
   fetchRepoUrl =
-    "https://api.github.com/users/rautNitesh/repos" +
+    "https://api.github.com/users/rautnitesh/repos" +
     `?page=${page_number}&per_page=1`;
   console.log(page_number);
 
   Promise.all([
-    fetch("https://api.github.com/users/rautNitesh"),
+    fetch("https://api.github.com/users/rautnitesh"),
     fetch(fetchRepoUrl),
   ])
     .then(async ([res, res2]) => {
