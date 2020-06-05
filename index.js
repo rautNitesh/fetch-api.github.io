@@ -46,7 +46,7 @@ function fetchAgain() {
         pagination += `<button class="githubRepo__pagination__button" onClick="pageUpdate(${i})">${i}</button>`;
       }
       data2.map((repo, index) => {
-        output += `<a href=${repo.html_url}id="githubRepo__url">${
+        output += `<a href="${repo.html_url}"id="githubRepo__url">${
           repo.name
         } </a>
         <p id="githubRepo__description">${
@@ -60,6 +60,10 @@ function fetchAgain() {
       document.getElementById("container").hidden = false;
       document.getElementById("newsFeed").hidden = false;
       document.getElementById("loading").hidden = true;
+    })
+    .catch((err) => {
+      document.body.appendChild(err.message);
+      console.log(err);
     });
 }
 fetchAgain();
